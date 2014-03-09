@@ -1,0 +1,80 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			function double(x)
+			{
+				return 2*x;
+			}
+
+			function noviRed()
+			{
+				document.write("<br/>");
+			}
+		</script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			 var txt = "Hello, world!";
+	         document.write("Duljina teksta je:" + txt.length + "<br/>");
+	         document.write("Tekst u upper caseu: " + txt.toUpperCase() + "<br />");
+	         document.write("Tekst u plavoj boji: " + txt.fontcolor("#0000FF") + "<br />");  
+	         document.write("Znak s Unicode kodom 1234 je: " +String.fromCharCode(1234) + "<br />");
+
+	         document.write("<br/><br/>");
+
+	         document.write("Neki random broj:" + Math.random() + "<br/>");
+	         
+	         //zakomentirani dio
+	         <!-- jos malo komentara -->
+
+	         var rijec = "Računarski praktikum 2<br/>";
+	         for(i=0;i<rijec.length;i++)
+	         {
+	         	if (i%2 == 0)
+	         		document.write(rijec.charAt(i).toUpperCase());
+	         	else
+	         		document.write(rijec.charAt(i).toLowerCase());
+	         }
+
+	         var k = 1;
+	         while(k < 10)
+	         	k+=double(k);
+	         
+	         document.write(k + "<br/>");
+
+	         var niz1 = new Array();
+	         niz1[0] = "prvi";
+	         niz1[1] = "drugi";
+	         niz1[2] = "treci";
+
+	         for (i in niz1)
+	         	document.write(niz1[i] + " ");
+	         
+	         niz1.reverse();
+	         
+	         noviRed();
+
+	         for(i = 0;i<niz1.length;i++)
+				document.write(niz1[i] + " ");
+
+			noviRed();
+
+			alert("Moj prvi alert.");
+			
+			if(confirm("da"))
+				document.write("Potvrdio sam.");
+			else
+				document.write("Nisam potvrdio.");
+
+			noviRed();
+
+			var povrat = prompt("Unesi neki broj");
+			if(povrat == null)
+				document.write("Nisam nista unio");
+			else
+				document.write("Unio sam " + povrat);
+
+			alert("Danas je " + new Date());
+	     </script>
+	</body>
+</html>
