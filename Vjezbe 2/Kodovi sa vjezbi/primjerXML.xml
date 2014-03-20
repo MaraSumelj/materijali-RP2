@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<primjer>
+	<zivotinja>
+		<vrsta>Macka</vrsta>
+		<opasna>Jako</opasna>
+		<ljubimac>Samo u kontroliranim uvjetima</ljubimac>
+	</zivotinja>
+
+	<zivotinja>
+		<vrsta>Zamorac</vrsta>
+		<opasna>Užasno</opasna>
+		<ljubimac>Preopasan za okolinu</ljubimac>
+	</zivotinja>
+
+	<zivotinja>
+		<vrsta>Pas</vrsta>
+		<opasna>Bezopasan</opasna>
+		<ljubimac>Samo za starije od 90 godina</ljubimac>
+	</zivotinja>
+
+	<zivotinja>
+		<vrsta>Južnoamerički orangutan</vrsta>
+		<opasna>Predator</opasna>
+		<ljubimac>Bježi kad ga vidiš</ljubimac>
+	</zivotinja>
+
+</primjer>

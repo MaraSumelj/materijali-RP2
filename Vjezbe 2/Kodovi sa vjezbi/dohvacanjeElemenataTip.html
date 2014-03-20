@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>Naslov</title>
+	</head>
+	<body>
+		<div>
+			<h1>Neki naslov</h1>
+			<p>Jedan <b>paragraf</b> sa masnim slovima.</p>
+		</div>
+		<br/>
+		<br/>
+		<script type="text/javascript">
+			var tag = document.getElementsByTagName("div")[0];
+			var unutrasnjost = tag.getElementsByTagName("*");
+
+			for(i = 0; i < unutrasnjost.length; i++)
+				document.write(unutrasnjost[i].innerHTML);
+		</script>
+	</body>
+</html>

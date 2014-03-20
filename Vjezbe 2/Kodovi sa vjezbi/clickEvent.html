@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function whichButton(event) {
+                if (event.button==2)
+                    alert("Desni klik!");
+                else
+                    alert("Lijevi klik! ");
+            }
+        </script>
+    </head>
+    <body onmousedown="whichButton(event)">
+        <p>Klikni bilo gdje u dokumentu i alert box ce iskociti.</p>
+    </body>
+</html>

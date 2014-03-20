@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>Naslov</title>
+		<script type="text/javascript">
+			function provjeriNaslov(){
+				var naslov = document.getElementsByName("naslov");
+				if(naslov == null)
+					alert("Nije pronaden");
+
+				else
+					alert("Pronaden je naslov sa tekstom '" + naslov[0].innerHTML + "'");
+			}
+
+			function provjeriParagrafe(){
+				var paragraf = document.getElementsByName("paragraf");
+				alert(paragraf.length);
+			}
+
+		</script>
+	</head>
+	<body>
+		<h1 name="naslov">Neki naslov</h1>
+		<p name="paragraf">Jedan <b>paragraf</b> sa masnim slovima.</p>
+		<p name="paragraf">Jos jedan <b>paragraf</b> sa masnim slovima.</p>
+		<p name="paragraf">Jos jedan <b>paragraf</b> sa masnim slovima.</p>
+		<p name="paragraf">Jos jedan <b>paragraf</b> sa masnim slovima.</p>
+		<p name="paragraf">Jos jedan <b>paragraf</b> sa masnim slovima.</p>
+		<p name="paragraf">Jos jedan <b>paragraf</b> sa masnim slovima.</p>
+		<p name="paragraf">Jos jedan <b>paragraf</b> sa masnim slovima.</p>
+
+		<script type="text/javascript">
+			provjeriNaslov();
+			provjeriParagrafe();
+		</script>
+	</body>
+</html>
