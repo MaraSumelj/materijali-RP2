@@ -1,0 +1,23 @@
+<html>
+<body>
+
+<div id="ispis"></div>
+
+<script>
+	if (typeof(Storage) != "undefined")
+	{
+	
+	  localStorage.setItem("kolegij", "RP2");
+	  document.getElementById("ispis").innerHTML=localStorage.getItem("kolegij");
+	
+	}
+
+	else
+	  document.getElementById("ispis").innerHTML="No storing for you bro.";
+
+	localStorage.x = 10;
+	var x = parseInt(localStorage.x);
+</script>
+
+</body>
+</html>
